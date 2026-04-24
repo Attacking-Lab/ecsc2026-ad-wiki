@@ -1,0 +1,64 @@
+site_name: ECSC 2025
+site_name_nav: ECSC<br>2025
+repo_url: https://github.com/attacking-lab/ecsc2025-ad-wiki
+site_url: https://wiki.ad.ecsc2025.pl
+validation:
+  links:
+    absolute_links: "ignore"
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
+  palette:
+    scheme: slate
+    primary: black
+    accent: magenta
+  custom_dir: overrides
+  features:
+    - navigation.instant
+nav:
+  - ECSC 2025 A/D: index.md
+  - Game Overview: game.md
+  - Team VMs: team.md
+  - Game Network: network.md
+  - CTF Platform: platform.md
+  - Attack API: api.md
+  - Scoring Formula: scoring.md
+  - Rules of Conduct: conduct.md
+  - Cheatsheet: cheatsheet.md
+  - Contact: contact.md
+markdown_extensions:
+  - abbr
+  - attr_list
+  - admonition
+  - tables
+  - footnotes
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - assets/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+extra:
+  generator: false
+  homepage: https://ad.ecsc2025.pl
+  index: /
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+  - assets/style.css
+plugins:
+  - search
+  - git-revision-date
+  - git-latest-changes
+  - print-site:
+      path_to_pdf: "/print_page/"

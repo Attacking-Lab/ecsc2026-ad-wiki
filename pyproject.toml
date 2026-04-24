@@ -1,0 +1,12 @@
+[project]
+name = "ecsc2025-ad-wiki"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-git-latest-changes-plugin>=0.0.22",
+    "mkdocs-git-revision-date-plugin>=0.3.2",
+    "mkdocs-material>=9.6.11",
+    "mkdocs-print-site-plugin>=2.8",
+    "mkdocs-to-pdf>=0.10.1",
+]
