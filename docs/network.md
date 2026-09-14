@@ -58,8 +58,6 @@ pcaps from your vulnbox to another host.
 Note that the effective bandwidth for game network connections
 may be lower due to how our traffic anonymization policies affect TCP throughput.
 
-<div style=width:1;height:50px></div>
-
 ## Traffic Anonymization
 
 Connections originating from outside your team's network are anonymized to prevent

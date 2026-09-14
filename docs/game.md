@@ -82,5 +82,5 @@ return one of the following results on a new line:
 - `[ERR] Invalid flag (service)`: The flag references an unknown service
 - `[ERR] Invalid flag (team)`: The flag references an unknown team
 - `[ERR] Invalid flag (hmac)`: The signature of the flag is incorrect
-- `[ERR] Internal error (database)`: A backend error occurred while recording the submission
+- `[ERR] Internal error (database)`: A backend error occurred
 

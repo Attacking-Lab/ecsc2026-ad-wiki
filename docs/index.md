@@ -41,8 +41,8 @@ The schedule for the day of the Attack-Defense CTF:<span style=width:1px;height:
 |      10:00       | [Platform](/platform) goes online, players may login via Discord |
 |        -         | Players can download WireGuard configs and connect to the game network            |
 |        -         | Players submit SSH keys to the platform            |
-|        -         | Scoreboard `10.60.249.1` and flag submission `10.60.249.2` are pingable  |
 |        -         | VPN Connection works within but not between teams                                  |
+|        -         | Scoreboard `10.60.249.1` and flag submission `10.60.249.2` are pingable  |
 |      10:30       | Organizers start all vulnboxes and exploiters with submitted keys  |
 |      11:00       | <span class=hltext>The Attack-Defense CTF officially begins</span>                 |
 |        -         | Network access to vulnboxes and exploiters is unblocked                                |
