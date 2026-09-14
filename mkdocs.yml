@@ -1,14 +1,14 @@
-site_name: ECSC 2025
-site_name_nav: ECSC<br>2025
-repo_url: https://github.com/attacking-lab/ecsc2025-ad-wiki
-site_url: https://wiki.ad.ecsc2025.pl
+site_name: ECSC 2026
+repo_url: https://github.com/attacking-lab/ecsc2026-ad-wiki
+site_url: "https://wiki.ad.ecsc2026.de"
 validation:
   links:
     absolute_links: "ignore"
 theme:
   name: material
-  logo: assets/logo.svg
-  favicon: assets/favicon.svg
+  logo: assets/ecsc2026-logo.svg
+  favicon: assets/ecsc2026-logo.svg
+  font: false
   palette:
     scheme: slate
     primary: black
@@ -17,12 +17,12 @@ theme:
   features:
     - navigation.instant
 nav:
-  - ECSC 2025 A/D: index.md
+  - ECSC 2026 A/D: index.md
+  - Changelog: changelog.md
   - Game Overview: game.md
-  - Team VMs: team.md
+  - Team VMs: vms.md
   - Game Network: network.md
   - CTF Platform: platform.md
-  - Attack API: api.md
   - Scoring Formula: scoring.md
   - Rules of Conduct: conduct.md
   - Cheatsheet: cheatsheet.md
@@ -30,6 +30,7 @@ nav:
 markdown_extensions:
   - abbr
   - attr_list
+  - md_in_html
   - admonition
   - tables
   - footnotes
@@ -47,18 +48,28 @@ markdown_extensions:
 
 extra_javascript:
   - assets/katex.js
+  - assets/scoring_chart.js
+  - assets/param_docs.js
   - https://unpkg.com/katex@0/dist/katex.min.js
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 extra:
   generator: false
-  homepage: https://ad.ecsc2025.pl
+  platform_url: "https://ad.ecsc2026.de"
+  homepage: "https://ad.ecsc2026.de"
+  scoreboard_url: "https://scoreboard.ad.ecsc2026.de"
+  wiki_url: "https://wiki.ad.ecsc2026.de"
+  event_url: "https://ecsc2026.de"
   index: /
+  site_name_nav: ECSC<br>2026
 extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
+  - assets/theme.css
   - assets/style.css
 plugins:
   - search
   - git-revision-date
   - git-latest-changes
+  - macros
   - print-site:
-      path_to_pdf: "/print_page/"
+      print_page_basename: flat
+      path_to_pdf: "/flat/"

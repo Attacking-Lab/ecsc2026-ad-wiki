@@ -52,8 +52,16 @@
       {% include ".icons/" ~ icon ~ ".svg" %}
     </label>
 
-    <!-- Header title -->
-    <div class="md-header__title">
+    <!-- Header title: also links home, so logo + title act as one clickable
+         unit. Kept as a separate <a> (rather than wrapping both in one) so
+         the drawer-toggle button between them keeps its original position
+         in the header layout; style.css pairs their hover state instead. -->
+    <a
+      href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}"
+      title="{{ config.site_name | e }}"
+      class="md-header__title"
+      aria-label="{{ config.site_name }}"
+    >
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
@@ -70,7 +78,7 @@
           </span>
         </div>
       </div>
-    </div>
+    </a>
 
     <!-- Color palette toggle -->
     {% if config.theme.palette %}

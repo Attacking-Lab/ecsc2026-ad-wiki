@@ -1,0 +1,6 @@
+# Keep .git — the git-revision-date / git-latest-changes plugins need it
+.venv/
+site/
+.agents/
+**/__pycache__/
+*.pyc

@@ -1,0 +1,96 @@
+/* =========================================================================
+   EVENT THEME — ECSC 2026 visual identity
+   Source: ecsc2026-merch/ECSC2026_VisualGuide.pdf
+
+   This file is the single source of truth for the event's colours. To
+   re-skin the wiki for a different event, replace ONLY the four brand
+   colours below — every surface, border, accent and scrollbar tone is
+   derived from them via color-mix(), so the rest of the theme follows.
+
+   Roles (from the guide, applied by meaning — not by frequency):
+     navy     main backgrounds / large surfaces      (~70%)
+     navy-2   layering
+     cyan     primary accent: headlines, icons, links, UI   (~25%)
+     magenta  secondary accent, used sparingly, must never
+              overpower cyan in the hierarchy         (~5%)
+   ========================================================================= */
+
+/* --- Typography (from the guide) ------------------------------------- */
+/* Saira Semi Condensed — headlines, navigation, UI (used UPPERCASE). */
+@font-face {
+  font-family: "Saira Semi Condensed";
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/SairaSemiCondensed-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Saira Semi Condensed";
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/SairaSemiCondensed-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Saira Semi Condensed";
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/SairaSemiCondensed-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Saira Semi Condensed";
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/SairaSemiCondensed-Bold.ttf) format("truetype");
+}
+/* Adwaita Sans (variable) — body text and informational content. */
+@font-face {
+  font-family: "Adwaita Sans";
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(fonts/AdwaitaSans.ttf) format("truetype");
+}
+
+:root {
+  /* --- Type families --------------------------------------------------- */
+  --ecsc-font-body:    "Adwaita Sans", system-ui, -apple-system, sans-serif;
+  --ecsc-font-display: "Saira Semi Condensed", var(--ecsc-font-body);
+
+  /* --- Brand palette (the only hard-coded colours) --------------------- */
+  --brand-navy:    #000619; /* deep navy   — main backgrounds */
+  --brand-navy-2:  #00072C; /* mid navy    — layering */
+  --brand-cyan:    #57C1FF; /* cyan        — primary accent */
+  --brand-magenta: #800D3C; /* deep magenta — secondary accent, sparingly */
+  --brand-white:   #ffffff;
+
+  /* --- Surfaces (navy ramp, darkest → most elevated) ------------------- */
+  --ecsc-surface-0: color-mix(in srgb, var(--brand-navy) 74%, #000); /* header/footer depth */
+  --ecsc-surface-1: var(--brand-navy);                               /* page background */
+  --ecsc-surface-2: var(--brand-navy-2);                             /* code, tables, admonitions */
+  --ecsc-surface-3: color-mix(in srgb, var(--brand-navy-2) 88%, var(--brand-cyan)); /* hover rows */
+  --ecsc-surface-4: color-mix(in srgb, var(--brand-navy-2) 80%, var(--brand-cyan)); /* elevated */
+
+  /* --- Hairlines / borders (subtle cyan tint on navy) ------------------ */
+  --ecsc-border:        color-mix(in srgb, var(--brand-cyan) 16%, transparent);
+  --ecsc-border-strong: color-mix(in srgb, var(--brand-cyan) 32%, transparent);
+
+  /* --- Text (near-white, faintly cyan-tinted for warmth on navy) ------- */
+  --ecsc-text:        color-mix(in srgb, var(--brand-white) 84%, var(--brand-cyan));
+  --ecsc-text-dim:    color-mix(in srgb, var(--brand-white) 62%, var(--brand-cyan));
+  --ecsc-text-dimmer: color-mix(in srgb, var(--brand-white) 42%, var(--brand-cyan));
+  --ecsc-text-faint:  color-mix(in srgb, var(--brand-white) 24%, transparent);
+  --ecsc-text-strong: var(--brand-white);
+
+  /* --- Accents --------------------------------------------------------- */
+  --ecsc-accent:        var(--brand-cyan);                                    /* links, UI, headings */
+  --ecsc-accent-bright: color-mix(in srgb, var(--brand-cyan) 74%, #fff);      /* hover / emphasis */
+  --ecsc-accent-deep:   color-mix(in srgb, var(--brand-cyan) 80%, var(--brand-navy)); /* h1 */
+  --ecsc-accent-wash:   color-mix(in srgb, var(--brand-cyan) 12%, transparent); /* hover / tint bg */
+  --ecsc-accent-line:   color-mix(in srgb, var(--brand-cyan) 55%, transparent); /* underlines */
+
+  --ecsc-detail:      var(--brand-magenta);                                   /* sparing detail */
+  --ecsc-detail-wash: color-mix(in srgb, var(--brand-magenta) 55%, transparent); /* ==mark== */
+
+  /* --- Scrollbars ------------------------------------------------------ */
+  --ecsc-scrollbar-track: var(--brand-navy-2);
+  --ecsc-scrollbar-thumb: color-mix(in srgb, var(--brand-cyan) 40%, var(--brand-navy-2));
+  --ecsc-scrollbar-thumb-hover: var(--brand-cyan);
+}
