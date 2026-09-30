@@ -107,6 +107,24 @@
     }, HOLD_MS);
   }
 
+  // Drops the fragment directive from the address bar. Browsers have already
+  // stripped it from location.hash by this point, so the bare section anchor is
+  // what remains. replaceState keeps this off the history stack - navigating to
+  // a hash instead (which is what the theme's own setLocationHash does, via a
+  // synthesized anchor click) would push an entry and cost the reader a second
+  // press of the back button to get back to the changelog.
+  function tidy() {
+    if (!history.replaceState)
+      return;
+    try {
+      history.replaceState(
+        history.state, "", location.pathname + location.search + location.hash
+      );
+    } catch (err) {
+      /* a sandboxed or file:// document - the URL simply keeps the directive */
+    }
+  }
+
   var pending = null;
   try {
     pending = sessionStorage.getItem(KEY);
@@ -114,6 +132,8 @@
   } catch (err) {
     /* storage is unavailable in private mode */
   }
-  if (pending)
+  if (pending) {
     highlight(pending);
+    tidy();
+  }
 })();
