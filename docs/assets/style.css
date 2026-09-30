@@ -86,6 +86,8 @@
   --md-shadow-z1: 0 0.2rem 0.5rem #0000000d, 0 0 0.05rem #0000001a;
   --md-shadow-z2: 0 0.2rem 0.5rem #0000001a, 0 0 0.05rem #00000040;
   --md-shadow-z3: 0 0.2rem 0.5rem #0003, 0 0 0.05rem #00000059;
+
+  --code-link-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z'/></svg>");
 }
 
 /* --- Scrollbars — themed to match the palette (navy track, cyan thumb) - */
@@ -833,10 +835,49 @@ details.question {
 	-webkit-mask: var(--code-link-icon) center / contain no-repeat;
 	mask: var(--code-link-icon) center / contain no-repeat;
 	transition: opacity 0.15s, background-color 0.15s;
-	--code-link-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z'/></svg>");
 }
 
 .code-link__btn:hover {
 	opacity: 1;
 	background-color: var(--md-accent-fg-color);
 }
+
+/* Per-entry link on the changelog, jumping to the changed text via a URL text
+   fragment. See assets/text_fragment.js for why these clicks bypass the
+   theme's instant navigation. */
+.md-typeset .changelog-link {
+	display: inline-block;
+	width: 0.75em;
+	height: 0.75em;
+	margin-left: 0.3em;
+	opacity: 0.45;
+	background-color: var(--md-default-fg-color);
+	-webkit-mask: var(--code-link-icon) center / contain no-repeat;
+	mask: var(--code-link-icon) center / contain no-repeat;
+	transition: opacity 0.15s, background-color 0.15s;
+}
+
+.md-typeset .changelog-link:hover {
+	opacity: 1;
+	background-color: var(--md-accent-fg-color);
+}
+
+/* Held highlight on the text a changelog link points at - see
+   assets/text_fragment.js. Same colour as ==mark== so highlighted text looks
+   the same wherever it came from. */
+.md-typeset mark.md-text-fragment {
+	background-color: var(--md-typeset-mark-color);
+	color: inherit;
+	transition: background-color 0.6s;
+}
+
+.md-typeset mark.md-text-fragment--done {
+	background-color: transparent;
+}
+
+/* The browser's own short-lived highlight, for readers arriving from elsewhere */
+::target-text {
+	background-color: var(--md-typeset-mark-color);
+	color: inherit;
+}
+
