@@ -49,7 +49,7 @@ These points combine to calculate the team score using the
 
 ## Flag Format
 
-<span class=hltext>Each flag is matched by the regular expression `/^ECSC\{[A-Za-z0-9-_]{32}\}$/`</span>
+<span class=hltext>Each flag is matched by the PCRE regular expression `/^ECSC\{[A-Za-z0-9_-]{32}\}$/`</span>
 
 
 Each flag consists of a prefix and suffix that wrap a base64-encoded[^1] payload with the following format:

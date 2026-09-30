@@ -85,6 +85,10 @@ You should consider the following when encountering network issues:
   PMTU values to keep a single host fingerprinted.
 - **TCP MSS** is set to a fixed value (MTU - 40) to prevent fingerprinting
   and potentially causing high packet rates.[^1]
+- **Some traffic is filtered and proxied on layer 7** to strip application-level
+  fingerprints, such as HTTP headers that are not required for the service to run.
+  Connections are not aggregated - each inbound connection still results in
+  exactly one connection to your vulnbox.
 
 [^1]: The router MTU and MSS values for the final CTF will be announced at a later date, since the on-site connection needs to be tested for this. The infrastructure demo will use an MTU of 1420 and an MSS of 1380.
 
