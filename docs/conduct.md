@@ -9,6 +9,7 @@ those defined by common law (and common sense):
 - <span class=hltext>Sharing flags, challenge details, or solutions to anyone outside
   your own team before the end of the competition is strictly prohibited.</span>
 - <span class=hltext>Giving or accepting assistance from anyone outside your own team and organizers for issues related to the competition is strictly prohibited.</span>
+- <span class=hltext>Using AI tools (chatbots, code assistants, AI-generated search completions/overviews, etc.) for anything related to the competition is strictly forbidden.</span> This includes AI overviews shown by default in search engine results; players are encouraged to install a blocker such as [Google AI Overviews Blocker](https://github.com/zbarnz/Google_AI_Overviews_Blocker) to avoid accidental exposure.
 - <span class=hltext>Gathering and/or taking advantage of insider information relating to the competition is prohibited.</span>
 - <span class=hltext>Attempting to elicit unintended behavior in any devices or services not designated as challenges for the competition running in the game network is strictly forbidden.</span>
 - <span class=hltext>Physically interacting or digitally tampering with the physical infrastructure provided by the organizers without permission is prohibited.</span>

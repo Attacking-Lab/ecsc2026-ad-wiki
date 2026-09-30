@@ -29,7 +29,12 @@ retrieved, and functionality checks were successful.
   but at least one flag from the past 4 rounds is missing.
 - <span class=hl-mumble>`MUMBLE`</span> if any functionality checks for the current round failed.
 - <span class=hl-offline>`OFFLINE`</span> if the checker failed to establish a connection to the service.
-- <span class=hl-error>`INTERNAL_ERROR`</span> if an internal error occurred. **Please notify us with context in a ticket.**
+- <span class=hl-error>`TIMEOUT`</span> if a service did not answer within its timeout.
+- <span class=hl-error>`CRASHED`</span> if a checker task failed for an unknown reason.
+- <span class=hl-error>`REVOKED`</span> if a checker task didnt not produce a result in time.
+
+If you see `CRASHED` or `REVOKED` for only your own service,
+**please notify us with context in a ticket**.
 
 ## Implementation
 
@@ -267,7 +272,7 @@ It is highly unlikely for a playing team to earn fewer points than NOP.
     is retroactive, as flags may be submitted up to 4 rounds *after* the round
     in which they are deployed.
 
-??? question "Why can the defense points be non-zero in a round our service status is neither <span class=hl-success>`SUCCESS`</span> nor <span class=hl-recovering>`RECOVERING`</span>?"
+??? question "Why can the defense points be non-zero in a round where our service status is neither <span class=hl-success>`SUCCESS`</span> nor <span class=hl-recovering>`RECOVERING`</span>?"
 
     Most likely, a team was attacking your service before it went down and submitted
     (at least some of) those flags in the round before it went down. These flags

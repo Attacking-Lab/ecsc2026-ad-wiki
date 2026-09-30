@@ -11,9 +11,12 @@ used with standard WireGuard tooling such as [wg-quick](https://www.man7.org/lin
 Every WireGuard config allows exactly <span class=hltext>one host</span> to connect to
 the game network. Trying to use the same config on multiple hosts simultaneously will
 make the connection unstable for all hosts using that config.
-Your *personal* config will be highlighted and not available for download by other players.
-Additional configs are provided for other infrastructure you may want to hook
-up to the network - coordinate to avoid using the same config in different places.
+
+Each player is provisioned <span class=hltext>2 personal configs</span>, highlighted and
+not available for download by other players. On top of that, every team is provisioned
+<span class=hltext>10 extra configs</span> for other infrastructure you may want to hook
+up to the network - coordinate within your team to avoid using the same config in
+different places.
 
 The config files contain credentials and information about the VPN endpoint.
 **Do not share any of this information with anyone outside your team.** This includes the

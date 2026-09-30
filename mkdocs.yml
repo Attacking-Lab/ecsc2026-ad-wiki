@@ -6,8 +6,8 @@ validation:
     absolute_links: "ignore"
 theme:
   name: material
-  logo: assets/ecsc2026-logo.svg
-  favicon: assets/ecsc2026-logo.svg
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
   font: false
   palette:
     scheme: slate
