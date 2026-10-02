@@ -8,8 +8,9 @@ those defined by common law (and common sense):
 
 - <span class=hltext>Sharing flags, challenge details, or solutions to anyone outside
   your own team before the end of the competition is strictly prohibited.</span>
-- <span class=hltext>Redirecting traffic aimed at your own services to any other host is
+- <span class=hltext>Redirecting traffic aimed at your own services to any other team is
   prohibited</span>, even when that traffic does not contain flags.
+- <span class=hltext>Deanonymizing traffic is prohibited</span>.
 - <span class=hltext>Giving or accepting assistance from anyone outside your own team and organizers for issues related to the competition is strictly prohibited.</span>
 - <span class=hltext>The [player handbook](https://handbook.ecsc2026.de/) is authoritative for the AI policy.</span>
 - <span class=hltext>Gathering and/or taking advantage of insider information relating to the competition is prohibited.</span>
