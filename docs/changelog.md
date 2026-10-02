@@ -2,6 +2,10 @@
 
 Short summaries of notable changes to this wiki, newest first.
 
+## 2026-10-02
+
+- Rules of Conduct: prohibited redirecting traffic aimed at your own services. [](conduct.md#rules-of-conduct:~:text=Redirecting%20traffic%20aimed%20at%20your%20own%20services){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }
+
 ## 2026-09-30
 
 - Rules of Conduct: the AI policy is now defined by the [player handbook](https://handbook.ecsc2026.de/) instead of this wiki. [](conduct.md#rules-of-conduct:~:text=is%20authoritative%20for%20the%20AI%20policy){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }
