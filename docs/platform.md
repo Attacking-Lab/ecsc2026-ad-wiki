@@ -19,7 +19,6 @@ independently from the platform.</span>
   applied and SSH keys you added or removed (see [Setup](vms.md#setup)).
   Use this if your VM is broken beyond repair.
 
-!!! warning "Downtime costs points"
-    Both actions take the VM offline for a short while. Checkers will
-    register this as a failed check for the affected round(s), costing you
-    SLA points, so time your reboots and resets accordingly.
+Both actions take the VM offline for a short while. Checkers will
+register this as a failed check for the affected round(s), costing you
+SLA points, so time your reboots and resets accordingly.
