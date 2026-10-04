@@ -29,7 +29,7 @@ retrieved, and functionality checks were successful.
   but at least one flag from the past 4 rounds is missing.
 - <span class=hl-mumble>`MUMBLE`</span> if any functionality checks for the current round failed.
 - <span class=hl-offline>`OFFLINE`</span> if the checker failed to establish a connection to the service.
-- <span class=hl-error>`TIMEOUT`</span> if a service did not answer within its timeout.
+- <span class=hl-error>`TIMEOUT`</span> if a checker did not answer within its timeout.
 - <span class=hl-error>`CRASHED`</span> if a checker task failed for an unknown reason.
 - <span class=hl-error>`REVOKED`</span> if a checker task didnt not produce a result in time.
 
