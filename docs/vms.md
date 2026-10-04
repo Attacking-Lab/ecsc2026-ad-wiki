@@ -20,3 +20,11 @@ Each vulnbox is provisioned with an organizer SSH key in `/root/.ssh/authorized_
 Teams are free to remove this SSH key; however, doing so limits
 the amount of support and automated fixes we can provide.
 
+## Defending
+
+The intent of the competition is always to attack the other teams'
+**services**, not the underlying vulnbox host itself. The organizers make
+an effort to prevent privilege-escalation vectors on the provided
+VMs, but in the end <span class=hltext>it is each team's own
+responsibility, as defenders, to keep their host locked down</span>.
+
