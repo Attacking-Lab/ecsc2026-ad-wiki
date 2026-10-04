@@ -50,6 +50,7 @@ extra_javascript:
   - assets/katex.js
   - assets/scoring_chart.js
   - assets/param_docs.js
+  - assets/text_fragment.js
   - https://unpkg.com/katex@0/dist/katex.min.js
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 extra:
