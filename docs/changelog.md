@@ -2,6 +2,13 @@
 
 Short summaries of notable changes to this wiki, newest first.
 
+## 2026-10-04
+
+- Rules of Conduct: clarified that only *actively* deanonymizing traffic is prohibited. [](conduct.md#rules-of-conduct:~:text=deanonymizing%20traffic%20is%20prohibited){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }
+- VM Control: documented that teams can reboot or reset their VMs from the platform. [](platform.md#vm-control){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }
+- Team VMs: added a section clarifying our stance on attacks against the host. [](vms.md#defending){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }
+- Checker Status: fixed the `TIMEOUT` SLA status description. [](scoring.md#checker-status:~:text=if%20a%20checker%20did%20not%20answer){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }
+
 ## 2026-10-02
 
 - Rules of Conduct: prohibited redirecting traffic aimed at your own services to another team. [](conduct.md#rules-of-conduct:~:text=Redirecting%20traffic%20aimed%20at%20your%20own%20services){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }
