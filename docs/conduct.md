@@ -10,7 +10,7 @@ those defined by common law (and common sense):
   your own team before the end of the competition is strictly prohibited.</span>
 - <span class=hltext>Redirecting traffic aimed at your own services to any other team is
   prohibited</span>, even when that traffic does not contain flags.
-- <span class=hltext>*Actively* deanonymizing traffic is prohibited</span>. Recognizing badly camouflaged exploits does not classify as *active*.
+- <span class=hltext>*Actively* deanonymizing traffic is prohibited</span>. We define as *active*, deanonymization that we can detect as an action on the part of a team at the network level.
 - <span class=hltext>Giving or accepting assistance from anyone outside your own team and organizers for issues related to the competition is strictly prohibited.</span>
 - <span class=hltext>The [player handbook](https://handbook.ecsc2026.de/) is authoritative for the AI policy.</span>
 - <span class=hltext>Gathering and/or taking advantage of insider information relating to the competition is prohibited.</span>
