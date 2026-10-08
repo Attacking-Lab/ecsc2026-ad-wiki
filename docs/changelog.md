@@ -2,9 +2,14 @@
 
 Short summaries of notable changes to this wiki, newest first.
 
+## 2026-10-08
+
+- Rules of Conduct: revised our stance on attacks against team VMs. [](conduct.md#rules-of-conduct:~:text=This%20includes%20local%20privilege%20escalation){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }
+- Rules of Conduct: add flag traffic carve-out for service responses. [](conduct.md#rules-of-conduct:~:text=Deploying%20flag%2Dlike%20strings%20into%20services){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }
+
 ## 2026-10-04
 
-- Rules of Conduct: fix flag sharing rule to disallow deploying old flags. [](conduct.md#rules-of-conduct:~:text=Sending%20and%20deploying%20flag%2Dlike%20strings%20is%20prohibited){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }
+- Rules of Conduct: fix fake flag rule to disallow deploying old flags. [](conduct.md#rules-of-conduct:~:text=Sending%20and%20deploying%20flag%2Dlike%20strings%20is%20prohibited){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }
 - Rules of Conduct: clarified that only *actively* deanonymizing traffic is prohibited. [](conduct.md#rules-of-conduct:~:text=deanonymizing%20traffic%20is%20prohibited){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }
 - VM Control: documented that teams can reboot or reset their VMs from the platform. [](platform.md#vm-control){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }
 - Team VMs: added a section clarifying our stance on attacks against the host. [](vms.md#defending){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }

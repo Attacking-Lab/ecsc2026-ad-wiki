@@ -23,8 +23,5 @@ the amount of support and automated fixes we can provide.
 ## Defending
 
 The intent of the competition is always to attack the other teams'
-**services**, not the underlying vulnbox host itself. The organizers make
-an effort to prevent privilege-escalation vectors on the provided
-VMs, but in the end <span class=hltext>it is each team's own
-responsibility, as defenders, to keep their host locked down</span>.
-
+**services**, not the underlying vulnbox host itself. Trying to circumvent
+the challenge isolation is [against the rules](conduct.md#rules-of-conduct:~:text=This%20includes%20local%20privilege%20escalation).
