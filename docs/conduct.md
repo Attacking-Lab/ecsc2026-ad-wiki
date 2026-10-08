@@ -21,7 +21,7 @@ those defined by common law (and common sense):
 - <span class=hltext>If you are not sure if something is allowed or not, use the ticketing system to ask before doing it.</span>
 - <span class=hltext>Any unfair behavior with respect to the competition or the other players is forbidden</span>, even if not explicitly described in the rules above; the organizers, the jury, and any other relevant authority reserve the right to evaluate each case independently.
 - <span class=hltext>Any action with the effect of intentionally making another team's service unavailable or non-functioning when interacted with by players or the checkers is prohibited.</span>
-- <span class=hltext>Deploying flag-like strings into services, as well as sending flag-like strings that aren't valid flags over the network, is prohibited for teams.</span> A string is flag-like if it is matched by the PCRE regular expression `/^ECSC\{[^\s]{0,128}\}$/`.
+- <span class=hltext>Deploying flag-like strings into services, as well as sending flag-like strings that aren't valid flags over the network, is prohibited for teams.</span> A string is flag-like if it is matched by the PCRE regular expression `/^ECSC\{[^\s]{0,128}\}$/`. Note, replying with old, valid flags is allowed under this rule.
 
 Please be aware that <span class=hltext>the entire game network traffic is logged</span> and will be accessed in case of a suspected rule violation.
 
