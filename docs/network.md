@@ -58,6 +58,8 @@ The overall bandwidth for each team's in- and outbound VPN traffic is capped
 at **1gbit/s** respectively. Keep this in mind if you plan to ship
 pcaps from your vulnbox to another host.
 
+The traffic to the scoreboard and submitter is capped at **50mbps** per team.
+
 Note that the effective bandwidth for game network connections
 may be lower due to how our traffic anonymization policies affect TCP throughput.
 
