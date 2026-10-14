@@ -2,6 +2,10 @@
 
 Short summaries of notable changes to this wiki, newest first.
 
+## 2026-10-14
+
+- Bandwidth Limits: capped traffic to the scoreboard and submission at 50mbps per team. [](network.md#bandwidth-limits:~:text=The%20traffic%20to%20the%20scoreboard%20and%20submission){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }
+
 ## 2026-10-08
 
 - Rules of Conduct: revised our stance on attacks against team VMs. [](conduct.md#rules-of-conduct:~:text=This%20includes%20local%20privilege%20escalation){ .changelog-link title="Open the changed section" aria-label="Open the changed section" }
